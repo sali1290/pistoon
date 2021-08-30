@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/cardsTopMargin"
+    android:layout_marginRight="@dimen/cardsRightAndLeft"
+    android:layout_marginLeft="@dimen/cardsRightAndLeft"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/cardsBottonMargin"
+    android:elevation="@dimen/Cardselevation"
+    app:cardCornerRadius="@dimen/cardsRightAndLeft"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="Suspicious0dp"
+            android:layout_weight="9"
+            >
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/search_result"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="right"
+                    tools:text="TextView"
+                    android:textColor="@color/textColor_deep_blue"
+                    android:textSize="@dimen/font_header_2"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.197"
+                    tools:ignore="RtlHardcoded" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:background="@color/recyclerEdgeBlueColor"
+            android:layout_height="match_parent"
+            tools:ignore="Suspicious0dp"
+            android:layout_weight="0.15"
+            >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

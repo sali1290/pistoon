@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.rahnama.pistoon">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name="ir.rahnama.pistoon.ui.font.Font"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalTest"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity android:name="ir.rahnama.pistoon.ui.MainActivity">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="pistoon" android:host="zarinpalpayment"/>
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name="ir.rahnama.pistoon.ui.ScreenSplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
+
+        </activity>
+
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+    </application>
+
+</manifest>

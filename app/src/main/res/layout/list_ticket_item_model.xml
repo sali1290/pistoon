@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ticket_list_cardview"
+    android:layout_marginTop="@dimen/cardsTopMargin"
+    android:layout_marginRight="@dimen/cardsRightAndLeft"
+    android:layout_marginLeft="@dimen/cardsRightAndLeft"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/cardsBottonMargin"
+    android:elevation="@dimen/Cardselevation"
+    app:cardCornerRadius="@dimen/cardsRightAndLeft"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linear_tricky"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="Suspicious0dp"
+            android:layout_weight="9">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/tricky_image"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/ic_support"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:tint="@color/textColor_deep_blue" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/TicketTitle_txt"
+                    android:textColor="@color/textColor_deep_blue"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toStartOf="@+id/tricky_image"
+                    app:layout_constraintTop_toTopOf="@+id/tricky_image"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/ticket_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/active_ticket"
+                    android:textColor="@color/textColor_deep_blue"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView13"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/ticket_list_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:breakStrategy="high_quality"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="4"
+                    android:textColor="@color/textColor_deep_blue"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_new_message"
+                    app:layout_constraintEnd_toStartOf="@+id/tricky_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    tools:text="اینجا متن سوال نمایش داده می شود"
+                    tools:ignore="RtlHardcoded" />
+
+
+                <TextView
+                    android:id="@+id/txt_new_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/NewMessage_txt"
+                    android:visibility="invisible"
+                    android:textColor="@color/trikyRed"
+                    android:textSize="@dimen/_8ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ticket_state_layout"
+            android:layout_width="0dp"
+            android:background="@color/light_green"
+            android:layout_height="match_parent"
+            tools:ignore="Suspicious0dp"
+            android:layout_weight="0.15"
+            android:orientation="horizontal" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+

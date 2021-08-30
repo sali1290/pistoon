@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="noti_bar">#2A305B</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#F9F9F9</color>
+    <color name="white_deep">#FFFFFF</color>
+    <color name="test">#00FFFFFF</color>
+
+
+
+    //new
+    <color name="light_gray">#D1D1D3</color>
+    <color name="gray">#959494</color>
+    <color name="light_blue">#557EF2</color>
+    <color name="golden">#fbcb6a</color>
+    <color name="light_green">#62d39e</color>
+    <color name="green">#07D322</color>
+    <color name="layout_background">#F3F3F3</color>
+    <color name="textColor_deep_blue">#44539D</color>
+
+
+    //another app
+    <color name="isDoneGreen">#07D322</color>
+    <color name="recyclerEdgeBlueColor">#6F88FC</color>
+    <color name="trikyRed">#FF6D7A</color>
+    <color name="trikyTransparentRed">#ffebee</color>
+    <color name="goldenColor">#FFC96D</color>
+    <color name="textColors">#2A305B</color>
+    <color name="courcesBlue">#6F88FC</color>
+    <color name="traffic_red">#43ED4B63</color>
+    <color name="traffic_yellow">#42FFC96D</color>
+    <color name="traffic_green">#4207D322</color>
+    <color name="boronz">#cd5832</color>
+
+
+</resources>

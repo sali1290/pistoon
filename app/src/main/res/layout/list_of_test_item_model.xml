@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView android:id="@+id/testRowCardView"
+    android:layout_width="wrap_content"
+    android:layout_height="160dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <ProgressBar
+                android:id="@+id/testRowProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="24dp"
+                android:progress="65"
+                android:progressDrawable="@drawable/progress_style"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/testRowTitlesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:breakStrategy="balanced"
+                android:textColor="@color/textColors"
+                android:textSize="@dimen/font_body"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13999999"
+                tools:text="آزمون مقدماتی 1" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/LastYourTry_txt"
+                android:textColor="@color/textColors"
+                android:textSize="@dimen/font_subtitle"
+                app:layout_constraintBottom_toTopOf="@+id/testRowPercentTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/testRowTitlesTextView"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <TextView
+                android:id="@+id/testRowPercentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                tools:text="65"
+                android:textColor="@color/textColors"
+                android:textSize="@dimen/font_body"
+                app:layout_constraintBottom_toTopOf="@+id/testRowProgressBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/test_ic_lock"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="8dp"
+                android:visibility="invisible"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_lock"
+                app:layout_constraintBottom_toTopOf="@+id/testRowProgressBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:tint="@color/trikyRed" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+

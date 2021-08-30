@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ticket_list_cardview"
+    android:layout_marginTop="@dimen/cardsTopMargin"
+    android:layout_marginRight="@dimen/cardsRightAndLeft"
+    android:layout_marginLeft="@dimen/cardsRightAndLeft"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/cardsBottonMargin"
+    android:elevation="@dimen/Cardselevation"
+    app:cardCornerRadius="@dimen/cardsRightAndLeft"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linear_tricky"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="Suspicious0dp"
+            android:layout_weight="9">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/best_record_medal"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/ic_silver_medal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <TextView
+                    android:id="@+id/player_name_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    tools:text="نام کاربری : "
+                    android:gravity="right"
+                    android:textColor="@color/textColor_deep_blue"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView51"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView51"
+                    app:layout_constraintTop_toTopOf="@+id/textView51"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="RtlHardcoded" />
+
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Person_txt"
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_position_number"
+                    app:layout_constraintStart_toEndOf="@+id/txt_position_number"
+                    app:layout_constraintTop_toTopOf="@+id/txt_position_number"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/txt_position_number"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    tools:text=" 1 "
+                    android:gravity="center"
+                    android:textColor="@color/textColor_deep_blue"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_game_record_counter"
+                    app:layout_constraintStart_toEndOf="@+id/txt_game_record_counter"
+                    app:layout_constraintTop_toTopOf="@+id/txt_game_record_counter"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/txt_game_record_counter"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    tools:text="213123"
+                    android:textColor="@color/trikyRed"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/best_record_medal"
+                    app:layout_constraintStart_toEndOf="@+id/best_record_medal"
+                    app:layout_constraintTop_toTopOf="@+id/best_record_medal" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/record_sate_color_layout"
+            android:layout_width="0dp"
+            android:background="@color/gray"
+            android:layout_height="match_parent"
+            tools:ignore="Suspicious0dp"
+            android:layout_weight="0.15"
+            android:orientation="horizontal" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+

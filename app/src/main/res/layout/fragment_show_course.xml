@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white_deep"
+    android:layout_height="match_parent"
+    tools:context=".ui.ShowCourseFragment">
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/course_layout"
+       android:background="@color/white_deep"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/showCourseRecycler"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:background="@color/white_deep"
+          android:nestedScrollingEnabled="false"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/constraintLayout4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/white_deep"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+         <LinearLayout
+             android:id="@+id/parent_indicator_layout"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@color/white_deep"
+             android:orientation="horizontal"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:id="@+id/page1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/indicator_shape"
+                android:gravity="center">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00FFFFFF"
+                   android:gravity="center"
+                   android:text="@string/one"
+                   android:textColor="@color/white_deep"
+                   android:textSize="@dimen/_7ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/page2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/indicator_shape"
+                android:gravity="center">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00FFFFFF"
+                   android:gravity="center"
+                   android:text="@string/two"
+                   android:textColor="@color/white_deep"
+                   android:textSize="@dimen/_7ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/page3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/indicator_shape"
+                android:gravity="center">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00FFFFFF"
+                   android:gravity="center"
+                   android:text="@string/three"
+                   android:textColor="@color/white_deep"
+                   android:textSize="@dimen/_7ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/page4"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/indicator_shape"
+                android:gravity="center">
+
+
+               <ImageView
+                   android:layout_width="8dp"
+                   android:layout_height="8dp"
+                   android:src="@drawable/ic_question_mark"
+                   app:tint="@color/white_deep" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/page5"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/indicator_shape"
+                android:gravity="center">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00FFFFFF"
+                   android:gravity="center"
+                   android:text="@string/five"
+                   android:textColor="@color/white_deep"
+                   android:textSize="@dimen/_7ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/page6"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/indicator_shape"
+                android:gravity="center">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00FFFFFF"
+                   android:gravity="center"
+                   android:text="@string/six"
+                   android:textColor="@color/white_deep"
+                   android:textSize="@dimen/_7ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/page7"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/indicator_shape"
+                android:gravity="center">
+
+
+               <ImageView
+                   android:layout_width="8dp"
+                   android:layout_height="8dp"
+                   android:src="@drawable/ic_question_mark"
+                   app:tint="@color/white_deep" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/page8"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/indicator_shape"
+                android:gravity="center">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#00FFFFFF"
+                   android:gravity="center"
+                   android:text="@string/eight"
+                   android:textColor="@color/white_deep"
+                   android:textSize="@dimen/_7ssp" />
+
+            </LinearLayout>
+
+
+         </LinearLayout>
+
+
+         <ImageView
+             android:id="@+id/main_course_btn_baack"
+             android:layout_width="24dp"
+             android:layout_height="24dp"
+             android:background="@drawable/button_shape"
+             android:padding="5dp"
+             android:src="@drawable/ic_back"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <ImageView
+             android:id="@+id/btn_finish_course"
+             android:layout_width="24dp"
+             android:layout_height="24dp"
+             android:layout_marginEnd="16dp"
+             android:background="@drawable/button_shape"
+             android:padding="5dp"
+             android:visibility="invisible"
+             android:src="@drawable/ic_check"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <ProgressBar
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             android:visibility="invisible"
+             android:elevation="2dp"
+             android:id="@+id/loading_finish_page_progressbar"
+             app:layout_constraintBottom_toBottomOf="@+id/btn_finish_course"
+             app:layout_constraintEnd_toEndOf="@+id/btn_finish_course"
+             app:layout_constraintStart_toStartOf="@+id/btn_finish_course"
+             app:layout_constraintTop_toTopOf="@+id/btn_finish_course" />
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

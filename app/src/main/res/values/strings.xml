@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name">پیستون</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و ف کرد. بگویوجود طراحی اساسا مورد استفاده قرار گیرد.</string>
+    <string name="txt_buy">خرید</string>
+    <string name="golden_test_txt">سوالات طلایی</string>
+    <string name="Course_list">لیست دروس</string>
+    <string name="guideline_course">خطوط راهنمایی رانندگی</string>
+    <string name="toggle_state1">فعال کردن حالت آموزشی</string>
+    <string name="toggle_state2">فعال کردن حالت امتحانی</string>
+    <string name="question"> سوال : </string>
+    <string name="answer">جواب :</string>
+    <string name="default_txt_tricky">شما هنوز درگیر تله های آزمون نشده اید :)</string>
+    <string name="finish_course_title1">تلاشت کافی نبود !!!</string>
+    <string name="finish_course_title2">باید بیشتر تلاش کنی!!!</string>
+    <string name="finish_course_title3">کارت عالیه!!!!</string>
+    <string name="finish_course_body1">میتونی دوباره تلاش کنی نگران نباش :)</string>
+    <string name="finish_course_body2">دوباره تلاش کن :)</string>
+    <string name="finish_course_body3">بزن بریم برای آموزش بعدی :)</string>
+    <string name="list_of_practical_course">لیست دوره های عملی</string>
+    <string name="list_of_theory_course">لیست دوره های تئوری</string>
+    <string name="week_avrage_text1">شانس شما برای قبولی در آزمون قابل قبول نیست باید تلاشت رو بیشتر کنی . میانگین پاسخ های صحیح در واقع میانگینی از آزمون های انجام شده و تعداد پاسخ های صحیح شماست پس برای نزدیک تر شدن به نتایج واقعی لازمه آزمون های بیشتری رو انجام بدی</string>
+    <string name="week_avrage_text2">برای اینکار بهتره که آموزش ها رو به دقت بخونی و آزمون های پیشرفته رو تکرار کنی . تو قسمت تله میتونی ببینی چه سوال هایی باعث شده دچار خطا بشی و سعی کنی اون ها رو حل کنی.اگر سوال یا آموزشی رو خوب یاد نگرفتی میتونی به قسمت نشان شده ها منتقلش کنی تا بیشتر مطالعه اش کنی</string>
+    <string name="normal_avrage_text1">میانگین پاسخ های صحیح شما احتمال قبولی شما رو بالا میبره ولی با این میانیگن هنوز آماده آزمون نیستی. میانگین پاسخ های صحیح در واقع میانگینی از آزمون های انجام شده و تعداد پاسخ های صحیح شماست پس برای نزدیک تر شدن به نتایج واقعی لازمه آزمون های بیشتری رو انجام بدی</string>
+    <string name="normal_avrage_text2">بهتره دورباره آموزش ها رو ببینی و آزمون ها رو برای گرفتن نتایج بهتر تکرار کنی .تا قبولی چیزی نمونده.سوالات طلایی میتونه کمک کنه سوالات مهم و پر تکرار رو زودتر به ذهنت بسری تا سریع تر به نتایج بهتری برسی</string>
+    <string name="strong_avrage_text1">میانگین پاسخ های شما نشانگر توانایی شما برای قبولی در آزمونه ، اگه تازه شروع کردی بهتره ادامه بدی . میانگین پاسخ های صحیح در واقع میانگینی از آزمون های انجام شده و تعداد پاسخ های صحیح شماست پس برای نزدیک تر شدن به نتایج واقعی لازمه آزمون های بیشتری رو انجام بدی</string>
+    <string name="strong_avrage_text2">برای این کار بهتره همه آموزش ها رو کامل ببینی و آزمون ها رو تکرار کنی بعد میانگین و نتیجه رو بررسی کنی . بهتره به قسمت تابلو ها و خطوط راهنما بیشتر سر بزنی و سعی کنی اونا رو هم کامل حفظ کنی</string>
+    <string name="course_quiz_body_text">در این بخش شما با 10 آزمون مقدماتی میتوانید مهارت های تست زنی خودتون رو بالا ببرید تا برای انجام تست های پیشرفته آمادگی لازم رو به دست بیارید.تست های مقدماتی مجموعه ای از سوالات ابتدایی آیین نامه راهنمایی رانندگیه که شما میتونید هربار با تکرار این آزمون ها احتمال قبولی آزمون رو بالا ببرید</string>
+    <string name="course_exam_body_string">در این بخش مجموعه 20 آزمون پیشرفته طراحی شده با پر تکرار ترین و مهم ترین سوالات آیین نامه راهنمایی رانندگی است که می توانید با انجام آنها آمادگی 100 درصد برای شرکت در آیین نامه را به دست بیاورید. در صورت داشتن سوالات غلط میتوانید سوال و پاسخ را در قسمت تله ها مشاهده کنید</string>
+    <string name="course_theory_body_text">آموزش تئوری شامل 4 بخش اصلی کتاب آیین نامه راهنمایی رانندگی در قالب آموزش و تست می باشد که در بین هر درس آموزشی با تکرار سوالات مهم هر سرفصل احتمال حفظ شدن مطلب را بالا میبرد. در پایان با توجه به عملکرد درسی شما امتیاز دهی می شود. در بخش اصلی صفحه خانه میتوان میزان پیشرفت کلی آموزش تئوری را دید</string>
+    <string name="course_practical_body_text">آموزش تئوری شامل 8 بخش اصلی کتاب آیین نامه راهنمایی رانندگی می باشد که با توجه به عملکرد شما در پایان هر آموزش ، هر درس آموزشی امتیاز دهی می شود و بخش مدال طلایی را روشن می کند که نشانگر پیشرفت شما و تکمیل آموزش می باشد.در صورت تکرار درس های آموزشی میتوان دوباره مراحل امتیاز دهی را تکرار کرد تا نتایج بهتری را کسب کنید</string>
+    <string name="course_board_body_text">تابلو ها از مهم ترین بخش آزمون راهنمایی رانندگی می باشد که با توجه به طراحی صفحه تابلو ها می توان با پنهان کردن اسم تابلو ها مراحل آزمونی تابلو ها را برای همه تابلو ها تکرار کرد. در بخش خطوط راهنما مباجثی پیرامون خطوط راهنما ارائه شده است</string>
+    <string name="manabe_txt">منابع آموزشی استفاه شده در اپلیکیشن شامل کتاب اصلی آیین نامه راهنمایی و رانندگی و دیتابیس بزرگی از سوالات پر تکرار آزمون های چندسال اخیر است که به صورت دسته بندی های مختلف در بخش درس های آموزشی و آزمون ها قابل مشاهده است.
+
+</string>
+    <string name="your_Development_txt">پیشرفت شما در یک نگاه</string>
+    <string name="lets_go_txt">برو بریم!</string>
+    <string name="best_score">برترین ها</string>
+    <string name="game_info"> توضیحات بازی</string>
+    <string name="game_info_text"> بازی خیلی ساده است شما باید با توجه به اسم تابلویی که در بالای صفحه نمایش داده میشه ماشین رو به سمت اون تابلو هدایت کنید.سرعت بازی به نسبت امتیاز شما تغییر میکنه .از قسمت برترین ها میتونی 25 رکورد برتر کاربران رو ببینی </string>
+    <string name="about_us">درباره ما</string>
+
+    <string name="about_us_body1">تلاش ما در این برنامه ساده تر کردن مسیر هدف شما بود 😊 </string>
+    <string name="about_us_body2">محتوای اصلی این برنامه خلاصه مسائل مهم و اصلی کتاب راهنمایی رانندگی و همچنین دیتابیس بزرگی از سوالات آزمون هاست.
+امیدواریم که از این برنامه نهایت استفاده رو برده باشید.
+</string>
+    <string name="about_us_body3">ما در گروه سوان تک تلاش کردیم که اپلیکیشن های پر کاربرد عموم کاربران رو با رابط کاربری زیبا و تجربه کاربری حرفه ای تر طراحی کنیم .عمده فعالیت تیم ما طراحی اپلیکیشن های موبایل ، تجربه تکنولوژی های جدید در زمینه هوش مصنوعی و همچنین فعالیت در حوزه طراحی گرافیک و سایت با کیفیت بالاست. برای اطلاعات بیشتر میتونید وارد وبسایت ما بشید ، همچنین خوشحال میشیم اگر نظر یا پیشنهادی دارید از قسمت تماس با ما به اشتراک بذارید  </string>
+
+    <string name="test_result_title_good"> تبریک!!!</string>
+    <string name="test_result_title2_good"> همینجوری ادامه بده!</string>
+    <string name="test_result_body_good"> نتیجه خوبی گرفتی و اگر همین روند رو ادامه بدی خیلی سریع آماده آزمون آیین نامه میشی!میتونی برای بالابردن اطمینان خاطر تست های بیشتری رو انجام بدی.</string>
+    <string name="test_result_title_medium"> لب مرزی!!!</string>
+    <string name="test_result_title2_medium">شانس قبولیت 50/50</string>
+    <string name="test_result_body_medium">خیلی خوب نیست! باید بیشتر تلاش کنی آزمون های بیشتری رو انجام بدی و آموزش ها را تکرار کنی . اگر سوالی رو مدام اشتباه میزنی هم در قسمت تله میتونی ببینی هم اینکه اون رو نشانه گذاری کنی!</string>
+    <string name="test_result_title_weak"> نتیجه قابل قبولی نیست!!!</string>
+    <string name="test_result_title2_weak"> احتمال قبولی در آزمون خیلی پایینه!</string>
+    <string name="test_result_body_weak"> این نتیجه افتضاحه!اینطوری شانسی برای قبولی نداری! بیشتر تلاش کن و با دقت بیشتر آموزش ها رو دنبال کن .سوالات طلایی میتونه کمک کنه سریع تر رشد کنی!</string>
+
+    <string name="active_ticket"> تیکت فعال</string>
+    <string name="inactive_ticket"> تیکت غیرفعال</string>
+
+    <string name="add_newticket_info">  کاربر گرامی برای ادامه ارتباط و اطلاع رسانی در مورد تیکت ها لازم به وارد کردن شماره تلفن همراه می باشد</string>
+    <string name="account_info_txt">اطلاعات حساب</string>
+    <string name="close_vpn_alert">لطفا در زمان پرداخت و ایجاد حساب فیلترشکن خود را خاموش کنید</string>
+    <string name="shouldToCreateAccount_txt">برای ارسال تیکت لازم است حساب کاربری را فعال کنید</string>
+    <string name="summaryTitle_txt">خلاصه ای از موضوع …</string>
+    <string name="CreateTicket_btn">ساخت تیکت</string>
+    <string name="UserName_txt">نام کاربری</string>
+    <string name="sumbit_btn">تایید</string>
+    <string name="needToInternetAlert_txt">- برای چک کردن نام کاربری دسترسی به اینترنت لازم است</string>
+    <string name="shouldToUseENLang_txt">- نام کاربری را به انگلیسی وارد کنید</string>
+    <string name="WhoPay_txt">پرداخت کننده :</string>
+    <string name="PhoneNumber_txt">شماره تلفن:</string>
+    <string name="AddAccount_btn">افزودن حساب کاربری</string>
+    <string name="howMuchToPay_txt">مبلغ پرداختی</string>
+    <string name="DiscountPay_txt">کد تخفیف</string>
+    <string name="Survey_btn">بررسی</string>
+    <string name="PayOnline_btn">پرداخت آنلاین</string>
+    <string name="HopeToBeDoneTicket_txt">امیدواریم که مشکل رفع شده باشه!</string>
+    <string name="IsTicketAnswered_txt">سوالت جواب داده شد ؟</string>
+    <string name="YesCloseTicket_txt">اره ، تیکت رو ببند</string>
+    <string name="NoContinue_txt">نه هنوز</string>
+    <string name="BuyAccount_txt">خرید اشتراک</string>
+    <string name="NeverMind_txt">بی خیال</string>
+    <string name="Exit_btn">خروج</string>
+    <string name="PaymentIsSucces_txt">پرداخت با موفقیت انجام شد.</string>
+    <string name="AccountBeActive_txt">اشتراک شما فعال شد!</string>
+    <string name="HopeTobeDoneSoon_txt">امیدواریم خیلی زود آمادگی لازم رو کسب کنید.</string>
+    <string name="Ok_txt">باشه</string>
+    <string name="Person_txt">نفر :</string>
+    <string name="Educational_txt">آموزشی</string>
+    <string name="Testing_txt">امتحانی</string>
+    <string name="Period_txt">دوره</string>
+    <string name="Quiz_txt">کوییز</string>
+    <string name="Delete_txt">حذف</string>
+    <string name="Add_txt">افزودن</string>
+    <string name="WebSite_txt">وب سایت</string>
+    <string name="DevelopTeam_txt">تیم برنامه نویسی</string>
+    <string name="DeveloperName_txt">رضا درویشیان ، احمدرضا هاشمی ، فاطمه کوهساری</string>
+    <string name="UITeam_txt">تیم طراحی رابط کاربری</string>
+    <string name="UIName_txt">حسن راعی ، آراد الماسی ، امیرحسین شایانی عارف</string>
+    <string name="UniversityName_txt">با تشکر از همکاری مرکز آموزش علمی کاربردی انفورماتیک ایران</string>
+    <string name="BoardLessonTitle_txt">تابلو های راهنمایی رانندگی</string>
+    <string name="CourseCategoryTitle_txt">دسته بندی آموزش ها</string>
+    <string name="TheoryCourse_txt">آموزش تئوری</string>
+    <string name="PracticalCourse_txt">آموزش عملی</string>
+    <string name="BoardAndGuidlineCourse_txt">تابلو ها و خطوط راهنما</string>
+    <string name="Empty_txt">خالی</string>
+    <string name="CourseResult_txt">نتیجه آموزش</string>
+    <string name="ShowCourseLIst_txt">مشاهده لیست دروس</string>
+    <string name="BackToGame_txt">برمیگردم</string>
+    <string name="TryAgain_txt">یه بار دیگه</string>
+    <string name="GoldenTestTitle_txt">سوالات طلایی</string>
+    <string name="SectionOne_txt">بخش 1</string>
+    <string name="SectionTwo_txt">بخش 2</string>
+    <string name="SectionThree_txt">بخش 3</string>
+    <string name="SectionFour_txt">بخش 4</string>
+    <string name="SectionSix_txt">بخش 6</string>
+    <string name="SectionFive_txt">بخش 5</string>
+    <string name="AverageOfTrueAnswer_txt">میانگین پاسخ های صحیح</string>
+    <string name="AverageAnswerInfo_txt">نحوه محاسبه : با انجام هر آزمون تعداد پاسخ های صحیح نسبت به کل تعداد سوالات آزمون محاسبه می گردد.</string>
+    <string name="DevelopmentPractical_txt">پیشرفت عملی</string>
+    <string name="DevelopmentTheory_txt">پیشرفت تئوری</string>
+    <string name="SavedTitle_txt">نشان شده</string>
+    <string name="TrickyTitle_txt">تله ها</string>
+    <string name="LastCourseTitle_txt">اخرین درس</string>
+    <string name="TestYourSelf_txt">خودتو بسنج!</string>
+    <string name="IntoTheGame_txt">ورود به بازی</string>
+    <string name="ExamListTitle_txt">لیست آزمون ها</string>
+    <string name="TicketListTitle_txt">لیست تیکت ها</string>
+    <string name="CreateNewTicket_txt">ایجاد تیکت جدید</string>
+    <string name="BestRecordTitle_txt">بهترین ها</string>
+    <string name="GameUserName_txt">نام کاربری</string>
+    <string name="CloseBestRecord_txt">بستن</string>
+    <string name="GoldenACCPrice">15 هزار تومان</string>
+    <string name="GoldenAccBody">+ فقط دسترسی به سوالات طلایی</string>
+    <string name="FullAccountTitle_txt">اشتراک جامع</string>
+    <string name="GoldenAccountTitle_txt">اشتراک طلایی</string>
+    <string name="FullAccountPrice">20 هزار تومان</string>
+    <string name="FullAccBody_txt">+ سوالات طلایی</string>
+    <string name="FullAccbody_txt2">+ دسترسی کامل به بخش پیست بازی</string>
+    <string name="FullAccBody_txt2">+ دسترسی کامل به آزمون ها و آموزش ها</string>
+    <string name="SendTicket_txt">ارسال تیکت</string>
+    <string name="MoneySec_txt">پول سازی !</string>
+    <string name="USerProfile_txt">پرفایل کاربری</string>
+    <string name="ResourceTitle_txt">منابع</string>
+    <string name="InviteFriendTitle_txt">دعوت از دوستان</string>
+    <string name="CallUsTitle_txt">تماس با ما</string>
+    <string name="AboutUsTitle_txt">درباره ما</string>
+    <string name="AccountStateTitle_txt">وضعیت اشتراک</string>
+    <string name="WithoutAccountTitle_txt">بدون اشتراک</string>
+    <string name="PayNumber_txt">شناسه پرداخت</string>
+    <string name="Time_txt">زمان</string>
+    <string name="PaymentInfo_txt">اطلاعات پرداخت</string>
+    <string name="NameAndFamily_txt">نام و نام خانوادگی</string>
+    <string name="ReciveCode_txt">کد دریافتی</string>
+    <string name="SendReciveCode_txt">ارسال کد تایید</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="eight">8</string>
+    <string name="TicketTitle_txt">تیکت</string>
+    <string name="WriteAmessage_txt">نوشتن پیام</string>
+    <string name="inActive_ticket">تیکت غیرفعال</string>
+    <string name="SendNewMessage_txt">ارسال پیام جدید</string>
+    <string name="TestResulteTitle">نتیجه آزمون</string>
+    <string name="TryAgainTest_btn">تلاش دوباره</string>
+    <string name="ShowTrueAnswer_txt">مشاهده پاسخنامه</string>
+    <string name="TestCategoryTitle_txt">دسته بندی آزمون ها</string>
+    <string name="BaseTestTitle">آزمون مقدماتی</string>
+    <string name="ExamTestTitle">آزمون پیشرفته</string>
+    <string name="TrickyTestTitle">تله های آزمون</string>
+    <string name="LastYourTry_txt">آخرین تلاش شما</string>
+    <string name="NewMessage_txt">پیام جدید</string>
+    <string name="TestTimeFinished_txt">متاسفانه زمان آزمون به پایان رسید!</string>
+    <string name="ReciveTitle_txt">دریافت شده :</string>
+    <string name="SendTime_txt">ارسال شده :</string>
+    <string name="phoneNumber">شماره تلفن</string>
+    <string name="edame"> ادامه</string>
+    <string name="MerChantCode"> ef5f7f2c-4f64-4874-872f-50da78ba574f</string>
+    <string name="PaymentCallBack"> pistoon://zarinpalpayment</string>
+    <string name="GetFullAccount"> دریافت اشتراک جامع </string>
+    <string name="GetGoldenAccount"> دریافت اشتراک طلایی </string>
+    <string name="ActiveAccount"> اشتراک فعال</string>
+    <string name="InvalidText">  نامعتبر</string>
+    <string name="AddAccountToApp">  لطفا حساب کاربری خود را وارد کنید"</string>
+    <string name="SuccessToSave"> با موفقیت ثبت شد</string>
+    <string name="AccessToExamAlert">  برای دسترسی کامل به سوالات آزمون اصلی اشتراک جامع را خریداری کنید </string>
+    <string name="CantAccessToNet"> اشکال در ارتباط </string>
+    <string name="FailedPaymentAlert">   متاسفانه در مراحل پرداخت مشکلی پیش آمد " </string>
+    <string name="AccessToGuidLine"> برای دسترسی به بخش خطوط راهنما لطفا اشتراک جامع را خریداری کنید  </string>
+    <string name="AccessToBoardAlert">برای دسترسی کامل به حالت آموزشی لطفا اشتراک جامع را خریداری کنیذ</string>
+    <string name="AccessToCourseAlert">برای دسترسی کامل به درس های آموزشی لطفا اشتراک جامع را خریداری کنید</string>
+    <string name="AccessToGoldenAlert">   برای دسترسی به سوالات طلایی نیاز به خرید اشتراک جامع یا سوالات طلایی می باشد </string>
+    <string name="url">"https://iranswanweb.ir/pistoon_app/"</string>
+    <string name="BackToCourseListTitle">بازگشت به لیست آزمون ها…</string>
+    <string name="ExitExamTitle">میخوای آزمون رو نیمه کاره ول کنی ؟</string>
+    <string name="AccessToGameAlert">برای دسترسی کامل به قسمت پیست بازی باید اشتراک جامع را خریداری کنید</string>
+
+
+</resources>

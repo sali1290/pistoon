@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_deep">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:background="#00F9F9F9"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_back_show_test"
+            android:layout_width="@dimen/back_btn_size"
+            android:layout_height="@dimen/back_btn_size"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/button_shape"
+            android:padding="5dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_end_test"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="پایان"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txt_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22:22"
+            android:textColor="@color/textColor_deep_blue"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/testRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white_deep"
+        app:layout_constraintBottom_toTopOf="@+id/steper_scrollview"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <HorizontalScrollView
+        android:id="@+id/steper_scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/steper_parent_view"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/stepsLinear1"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/one"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear2"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/two"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear3"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear4"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear5"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear6"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear7"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear8"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear9"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear10"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear11"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="11"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear12"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear13"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="13"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear14"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="14"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear15"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear16"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="16"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear17"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="17"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear18"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="18"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear19"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="19"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear20"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear21"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="21"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear22"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="22"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear23"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="23"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear24"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="24"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear25"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="25"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear26"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="26"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear27"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="27"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear28"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="28"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear29"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="29"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stepsLinear30"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@drawable/steper_raduis"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/_5sdp"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="30"
+                    android:textColor="@color/white_deep"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
