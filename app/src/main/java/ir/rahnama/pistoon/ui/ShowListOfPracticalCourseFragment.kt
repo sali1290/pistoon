@@ -25,7 +25,6 @@ class ShowListOfPracticalCourseFragment : Fragment() , PracticalCourseListAdapte
     private lateinit var db : MyDatabase
     private lateinit var CourseListRecyclerView : RecyclerView
     private lateinit var bottomNavigationView : BottomNavigationView
-    private var fullAccount=false
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,9 +40,6 @@ class ShowListOfPracticalCourseFragment : Fragment() , PracticalCourseListAdapte
 
         Hawk.init(requireActivity()).build()
 
-        if (Hawk.get("fullAccount",0) == 20){
-            fullAccount=true
-        }
 
 
         getPracticalCourse()
@@ -63,7 +59,7 @@ class ShowListOfPracticalCourseFragment : Fragment() , PracticalCourseListAdapte
 
         db= MyDatabase(requireContext())
         val courseList = db.getPracticalCourse()
-        val adapter = PracticalCourseListAdapter(requireContext(), courseList,this,fullAccount)
+        val adapter = PracticalCourseListAdapter(requireContext(), courseList,this)
         CourseListRecyclerView.adapter=adapter
         CourseListRecyclerView.layoutManager= LinearLayoutManager(requireContext())
 
@@ -80,33 +76,8 @@ class ShowListOfPracticalCourseFragment : Fragment() , PracticalCourseListAdapte
     }
 
 
-
-    private fun alertDialog(alert_title: String) {
-
-        val builder = AlertDialog.Builder(requireActivity()).create()
-        val inflater = layoutInflater
-        val dialogLayout = inflater.inflate(R.layout.alertdialog_locked_section, null)
-
-        val title = dialogLayout.findViewById<TextView>(R.id.alert_txt_title)
-        val btn_ok = dialogLayout.findViewById<TextView>(R.id.btn_alert_ok)
-
-        title.text = alert_title
-
-        btn_ok.setOnClickListener{
-            builder.dismiss()
-            bottomNavigationView.selectedItemId=R.id.more_nav
-            val fragmentTransaction: FragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-            fragmentTransaction.remove(this)
-        }
-
-
-        builder.setView(dialogLayout)
-        builder.show()
-    }
-
-
     override fun onItemClick(id: Int) {
-        if (fullAccount){
+
             when(id){
                 1 -> loadFragment(ShowCourseFragment(true, id.toString(), arrayListOf("77","98"), null))
                 2 -> loadFragment(ShowCourseFragment(true, id.toString(), arrayListOf("92","225"), null))
@@ -117,15 +88,6 @@ class ShowListOfPracticalCourseFragment : Fragment() , PracticalCourseListAdapte
                 7 -> loadFragment(ShowCourseFragment(true, id.toString(), arrayListOf("1","244"), null))
                 8 -> loadFragment(ShowCourseFragment(true, id.toString(), arrayListOf("56","76"), null))
             }
-        }else{
-            when(id){
-                1 -> loadFragment(ShowCourseFragment(true, id.toString(), arrayListOf("77","98"), null))
-                2 -> loadFragment(ShowCourseFragment(true, id.toString(), arrayListOf("92","225"), null))
-                3 -> loadFragment(ShowCourseFragment(true, id.toString(), arrayListOf("112","57"), null))
-                4 -> loadFragment(ShowCourseFragment(true, id.toString(), arrayListOf("211","43"), null))
-                else -> alertDialog(resources.getString(R.string.AccessToCourseAlert))
-            }
-        }
 
     }
 

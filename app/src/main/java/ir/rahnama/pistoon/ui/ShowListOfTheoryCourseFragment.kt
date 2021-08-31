@@ -25,7 +25,6 @@ class ShowListOfTheoryCourseFragment : Fragment() , TheoryCourseListAdapter.Item
     private lateinit var db : MyDatabase
     private lateinit var CourseListRecyclerView : RecyclerView
     private lateinit var bottomNavigationView : BottomNavigationView
-    private var fullAccount=false
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -40,14 +39,7 @@ class ShowListOfTheoryCourseFragment : Fragment() , TheoryCourseListAdapter.Item
 
         Hawk.init(requireActivity()).build()
 
-        if (Hawk.get("fullAccount",0) == 20){
-            fullAccount=true
-        }
-
-
-
         getTheoryCourse()
-
 
         theory_course_btn_back.setOnClickListener{
             val fm : FragmentManager =requireActivity().supportFragmentManager
@@ -63,7 +55,7 @@ class ShowListOfTheoryCourseFragment : Fragment() , TheoryCourseListAdapter.Item
         try {
             db= MyDatabase(requireContext())
             val courseList = db.getTheoryCourse()
-            val adapter = TheoryCourseListAdapter(requireContext(), courseList,this,fullAccount)
+            val adapter = TheoryCourseListAdapter(requireContext(), courseList,this)
             CourseListRecyclerView.adapter=adapter
             CourseListRecyclerView.layoutManager= LinearLayoutManager(requireContext())
         }catch (e: Exception){
@@ -85,50 +77,12 @@ class ShowListOfTheoryCourseFragment : Fragment() , TheoryCourseListAdapter.Item
 
     }
 
-
-
-    private fun alertDialog(alert_title: String) {
-
-        val builder = AlertDialog.Builder(requireActivity()).create()
-        val inflater = layoutInflater
-        val dialogLayout = inflater.inflate(R.layout.alertdialog_locked_section, null)
-
-        val title = dialogLayout.findViewById<TextView>(R.id.alert_txt_title)
-        val btn_ok = dialogLayout.findViewById<TextView>(R.id.btn_alert_ok)
-
-        title.text = alert_title
-
-        btn_ok.setOnClickListener{
-            builder.dismiss()
-            bottomNavigationView.selectedItemId=R.id.more_nav
-            val fragmentTransaction: FragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-            fragmentTransaction.remove(this)
-        }
-
-
-        builder.setView(dialogLayout)
-        builder.show()
-    }
-
-
-
     override fun onItemClick(id: Int) {
-
-        if (fullAccount){
             when(id){
                 1 -> loadFragment(ShowCourseFragment(false, id.toString(), arrayListOf("107","201"), null))
                 2 -> loadFragment(ShowCourseFragment(false, id.toString(), arrayListOf("60","198"), null))
                 3 -> loadFragment(ShowCourseFragment(false, id.toString(), arrayListOf("216","84"), null))
                 4 -> loadFragment(ShowCourseFragment(false, id.toString(), arrayListOf("167","245"), null))
             }
-        }else{
-            when(id){
-                1 -> loadFragment(ShowCourseFragment(false, id.toString(), arrayListOf("107","201"), null))
-                2 -> loadFragment(ShowCourseFragment(false, id.toString(), arrayListOf("60","198"), null))
-               else -> alertDialog(resources.getString(R.string.AccessToCourseAlert))
-
-            }
-        }
-
     }
 }

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.zarinpal:purchase:0.0.10@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a758d51ab4421307777fb94d954bcfd3/jetified-purchase-0.0.10/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a758d51ab4421307777fb94d954bcfd3/jetified-purchase-0.0.10/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a758d51ab4421307777fb94d954bcfd3/jetified-purchase-0.0.10/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f460e3ea76a3c7a32faf786d388e32a3/jetified-purchase-0.0.10/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f460e3ea76a3c7a32faf786d388e32a3/jetified-purchase-0.0.10/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f460e3ea76a3c7a32faf786d388e32a3/jetified-purchase-0.0.10/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zarinpal/purchase/0.0.10/a3c878792b8cceff43c50379b8f5f29e8cdf5411/purchase-0.0.10-javadoc.jar!/" />

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.mikhaellopez:circularprogressbar:3.0.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b1448c02b3ed800fc224543a9721084/jetified-circularprogressbar-3.0.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b1448c02b3ed800fc224543a9721084/jetified-circularprogressbar-3.0.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b1448c02b3ed800fc224543a9721084/jetified-circularprogressbar-3.0.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f5f521e5805e6f7f125e8ee02f859f6/jetified-circularprogressbar-3.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f5f521e5805e6f7f125e8ee02f859f6/jetified-circularprogressbar-3.0.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f5f521e5805e6f7f125e8ee02f859f6/jetified-circularprogressbar-3.0.3/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

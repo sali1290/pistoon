@@ -41,23 +41,18 @@ class BoardCourseList : Fragment() {
         val board_cardview = view.findViewById<CardView>(R.id.Board_course_cardview)
         val guideline_cardview = view.findViewById<CardView>(R.id.GuideLine_cardview)
         val image_back = view.findViewById<ImageView>(R.id.img_back)
-        val gudline_ic_lock = view.findViewById<ImageView>(R.id.gudline_ic_lock)
         texttitle = view.findViewById(R.id.txt_title)
         guideline_frame = view.findViewById(R.id.guideline_frame)
         guiderecycler=view.findViewById(R.id.guideline_recycler)
          bottom_navigation =requireActivity().findViewById(R.id.bottom_navigation)
         bottom_navigation.visibility=View.GONE
 
+        val x = null
+        val l = listOf(x)
+
 
         //secure key values
         Hawk.init(requireActivity()).build()
-
-
-        if (Hawk.get("fullAccount",0) == 20 ){
-            gudline_ic_lock.visibility=View.INVISIBLE
-        }
-
-
 
 
         board_cardview.setOnClickListener{loadFragment(ShowBoardFragment())}
@@ -119,37 +114,9 @@ class BoardCourseList : Fragment() {
 
 
 
-    private fun alertDialog(alert_title: String) {
-
-        val builder = AlertDialog.Builder(requireActivity()).create()
-        val inflater = layoutInflater
-        val dialogLayout = inflater.inflate(R.layout.alertdialog_locked_section, null)
-
-        val title = dialogLayout.findViewById<TextView>(R.id.alert_txt_title)
-        val btn_ok = dialogLayout.findViewById<TextView>(R.id.btn_alert_ok)
-
-        title.text = alert_title
-
-        btn_ok.setOnClickListener{
-            builder.dismiss()
-            bottom_navigation.selectedItemId=R.id.more_nav
-            val fragmentTransaction: FragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-            fragmentTransaction.remove(this)
-        }
-
-
-        builder.setView(dialogLayout)
-        builder.show()
-    }
-
-
     private fun showGuidline(){
 
-        if (Hawk.get("fullAccount",0) == 20){
             showAllGuideLine()
-        }else{
-            alertDialog(resources.getString(R.string.AccessToGuidLine))
-        }
 
     }
 
