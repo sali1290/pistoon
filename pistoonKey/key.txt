@@ -1,2 +1,0 @@
-key : pistoon
-key storepassword and key password : Pistoonasd!@#
