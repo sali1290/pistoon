@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.security:security-crypto:1.1.0-alpha03@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2527ae07bb9e48037615c189dbfebc3/jetified-security-crypto-1.1.0-alpha03/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2527ae07bb9e48037615c189dbfebc3/jetified-security-crypto-1.1.0-alpha03/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2527ae07bb9e48037615c189dbfebc3/jetified-security-crypto-1.1.0-alpha03/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/94d22e4706aed9f2b6338442cac9f1fb/jetified-security-crypto-1.1.0-alpha03/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/94d22e4706aed9f2b6338442cac9f1fb/jetified-security-crypto-1.1.0-alpha03/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/94d22e4706aed9f2b6338442cac9f1fb/jetified-security-crypto-1.1.0-alpha03/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

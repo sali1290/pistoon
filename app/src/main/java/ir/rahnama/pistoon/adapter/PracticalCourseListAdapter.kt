@@ -12,7 +12,9 @@ import ir.rahnama.pistoon.R
 import ir.rahnama.pistoon.model.CourseListModel
 
 
-class PracticalCourseListAdapter(private var context: Context, private var courseList: List<CourseListModel>, private var listener : ItemClickListener , var fullAccount:Boolean) : RecyclerView.Adapter<PracticalCourseListAdapter.MyViewHolder>() {
+class PracticalCourseListAdapter(private var context: Context,
+                                 private var courseList: List<CourseListModel>,
+                                 private var listener : ItemClickListener) : RecyclerView.Adapter<PracticalCourseListAdapter.MyViewHolder>() {
 
 
 
@@ -41,7 +43,7 @@ class PracticalCourseListAdapter(private var context: Context, private var cours
         }
 
 
-        if (!fullAccount){
+       /* if (!fullAccount){
             when(position){
                 4 -> holder.test_list_lock_ic.visibility=View.VISIBLE
                 5 -> holder.test_list_lock_ic.visibility=View.VISIBLE
@@ -50,7 +52,7 @@ class PracticalCourseListAdapter(private var context: Context, private var cours
 
             }
         }
-
+*/
 
 
 
@@ -74,7 +76,7 @@ class PracticalCourseListAdapter(private var context: Context, private var cours
         var quizIsDone: TextView =  itemView.findViewById(R.id.queizIsDoneText)
         var courceIsDone: TextView =  itemView.findViewById(R.id.courceIsDoneText)
         var list_item_cardview : CardView = itemView.findViewById(R.id.list_item_cardview)
-        var test_list_lock_ic : ImageView = itemView.findViewById(R.id.test_list_lock_ic)
+       /* var test_list_lock_ic : ImageView = itemView.findViewById(R.id.test_list_lock_ic)*/
 
 
 

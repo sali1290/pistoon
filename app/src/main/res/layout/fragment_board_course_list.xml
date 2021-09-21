@@ -188,17 +188,6 @@
                             tools:ignore="RtlHardcoded" />
 
 
-                        <ImageView
-                            android:id="@+id/gudline_ic_lock"
-                            android:layout_width="14dp"
-                            android:layout_height="14dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginBottom="8dp"
-                            android:src="@drawable/ic_lock"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:tint="@color/trikyRed" />
-
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

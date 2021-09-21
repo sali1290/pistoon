@@ -16,7 +16,6 @@ class TheoryCourseListAdapter(
     private var context: Context,
     private var courseList: List<CourseListModel>,
     private var listener: ItemClickListener,
-    private var fullAccount: Boolean
 ) : RecyclerView.Adapter<TheoryCourseListAdapter.MyViewHolder>() {
 
 
@@ -45,19 +44,6 @@ class TheoryCourseListAdapter(
 
         }
 
-
-        if (!fullAccount){
-            when(position){
-                2 -> holder.test_list_lock_ic.visibility=View.VISIBLE
-                3 -> holder.test_list_lock_ic.visibility=View.VISIBLE
-            }
-        }
-
-
-
-
-
-
         holder.list_item_cardview.setOnClickListener{
             listener.onItemClick(courseList[position].id.toInt())
         }
@@ -78,7 +64,6 @@ class TheoryCourseListAdapter(
         var quizIsDone: TextView =  itemView.findViewById(R.id.queizIsDoneText)
         var courceIsDone: TextView =  itemView.findViewById(R.id.courceIsDoneText)
         var list_item_cardview : CardView = itemView.findViewById(R.id.list_item_cardview)
-        var test_list_lock_ic : ImageView = itemView.findViewById(R.id.test_list_lock_ic)
 
 
 
